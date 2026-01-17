@@ -1,0 +1,97 @@
+/* =========================
+   Base styles (minimal) -- Feel free to change these to match your style!
+   ========================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fff;
+}
+
+/* =========================
+   Accessibility
+   ========================= */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 0.5rem;
+  background: #000;
+  color: #fff;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* =========================
+   Global spacing
+   ========================= */
+
+header,
+main,
+footer,
+section {
+  padding: 1rem;
+}
+
+/* =========================
+   Typography (intentionally plain)
+   ========================= */
+
+h1,
+h2 {
+  line-height: 1.25;
+}
+
+ul {
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   Forms (bare minimum)
+   ========================= */
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+}
+
+/*
+  Everything else is intentionally left for you to design:
+  - layout
+  - hierarchy
+  - spacing
+  - emphasis
+  - visual grouping
+*/
