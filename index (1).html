@@ -4,60 +4,62 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Workshop Registration</title>
-  <meta name="description" content="Register for a free, in-person workshop." />
+  <title>Plant & Care Workshop | Greenhouse Club</title>
+  <meta name="description" content="Register for a free flower planting workshop at the SVC Greenhouse." />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Accessibility: allow keyboard users to skip repetitive content -->
   <a href="#main" class="skip-link">Skip to main content</a>
 
   <header>
-    <!-- Organization name or branding -->
-    <p>Community Career Center</p>
+    <p><strong>SVC Greenhouse and Garden Club</strong></p>
   </header>
 
   <main id="main">
-    <section>
-      <h1>Intro to YOUR_WORKSHOP_NAME</h1>
+    <section class="hero-section">
+      <h1>Plant Your First Flower Workshop</h1>
 
-      <p>
-        Add a description for your workshop here.
+      <p class="description">
+        Learn how to plant and care for your own flower! This hands-on session covers potting basics, soil health, and long-term plant care.
       </p>
 
-      <!-- Key details -->
-      <p>Data & Time</p>
-      <p>Modality</p>
-      <p>Price</p>
+      <div class="quick-details">
+        <p><strong>Date:</strong> Tuesday, Feb 10th, 2026</p>
+        <p><strong>Time:</strong> 1:00 PM – 3:00 PM</p>
+        <p><strong>Location:</strong> In-person at the Greenhouse</p>
+        <p><strong>Cost:</strong> Free for all students and staff</p>
+      </div>
 
-      <!-- Primary action: exactly one -->
-      <a href="#register">Register</a>
+      <a href="#register" class="cta-button">Claim My Free Flower Pot</a>
     </section>
 
-    <!-- Supporting information -->
-    <section>
-      <h2>What you’ll get</h2>
+    <section class="outcomes">
+      <h2>What you’ll gain</h2>
       <ul>
-        <li>Some outcome</li>
-        <li>Another outcome</li>
-        <li>And another outcome</li>
+        <li>A flower of your own to take home.</li>
+        <li>Skills to keep your plants healthy and thriving.</li>
+        <li>Connection with fellow plant enthusiasts on campus.</li>
       </ul>
     </section>
 
-    <!-- Registration -->
-    <section id="register">
-      <h2>Register</h2>
-
+    <section id="register" class="register-form">
+      <h2>Register Now</h2>
+      <p>Reserve your spot and your plant supplies.</p>
       <form action="#" method="post">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Michael Ngo">
+        
+        <label for="email">SVC Email</label>
+        <input type="email" id="email" name="email" required placeholder="m.ngo@mysvc.skagit.edu">
 
-        <button type="submit"></button>
+        <button type="submit">Complete Registration</button>
       </form>
     </section>
   </main>
 
   <footer>
-    <p>Don't forget about footer content!</p>
+    <p>&copy; 2026 SVC Greenhouse and Garden Club. Designed for CS 355.</p>
   </footer>
 </body>
 </html>
