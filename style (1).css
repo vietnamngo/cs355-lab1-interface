@@ -1,5 +1,5 @@
 /* =========================
-   Base styles (minimal) -- Feel free to change these to match your style!
+   Base styles Outline Provided
    ========================= */
 
 *,
@@ -13,13 +13,10 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.5;
   color: #222;
-  background: #fff;
+  background: #fdfdfd; /* Slightly off-white to reduce eye strain */
 }
 
-/* =========================
-   Accessibility
-   ========================= */
-
+/* Accessibility */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -33,10 +30,7 @@ body {
   top: 0;
 }
 
-/* =========================
-   Global spacing
-   ========================= */
-
+/* Global spacing */
 header,
 main,
 footer,
@@ -44,10 +38,7 @@ section {
   padding: 1rem;
 }
 
-/* =========================
-   Typography (intentionally plain)
-   ========================= */
-
+/* Typography */
 h1,
 h2 {
   line-height: 1.25;
@@ -61,10 +52,7 @@ li {
   margin-bottom: 0.5rem;
 }
 
-/* =========================
-   Forms (bare minimum)
-   ========================= */
-
+/* Forms */
 label {
   display: block;
   font-weight: 600;
@@ -80,18 +68,90 @@ input {
   width: 100%;
   padding: 0.4rem;
   margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-button {
-  padding: 0.6rem 1rem;
-  cursor: pointer;
+/* =========================
+   MICHAEL'S UI/UX ENHANCEMENTS
+   ========================= */
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
-/*
-  Everything else is intentionally left for you to design:
-  - layout
-  - hierarchy
-  - spacing
-  - emphasis
-  - visual grouping
-*/
+header {
+  background-color: #2d5a27; /* Forest Green signals the Garden theme */
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Visual Hierarchy: The Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #1b3a1a;
+}
+
+/* Visual Grouping: Quick Details Box */
+.quick-details {
+  background: #f0f4f0;
+  border-left: 6px solid #2d5a27;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+/* The Primary Action (Call to Action) */
+.cta-button {
+  display: inline-block;
+  background-color: #bc6c25; /* Earthy orange - High contrast against green/white */
+  color: white;
+  padding: 1.2rem 2.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.25rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.1s;
+}
+
+.cta-button:hover {
+  background-color: #9b541a;
+  transform: scale(1.02);
+}
+
+/* Reducing Cognitive Load on Form */
+#register {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+button[type="submit"] {
+  background-color: #2d5a27;
+  color: white;
+  border: none;
+  width: 100%;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  color: #666;
+  font-size: 0.85rem;
+}
